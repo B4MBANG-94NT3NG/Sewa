@@ -1,6 +1,6 @@
 require('./ac')
-global.ownerNotification = "62895328005151";
-global.grubwa = "https://chat.whatsapp.com/KJD2nB7j7lfHux9AVQCra4";
+global.ownerNotification = "6287732200388";
+global.grubwa = "https://chat.whatsapp.com/KJD2nB77lfHux9AVQCra4";
 global.listKasar = ['anjing','babi','kontol','memek','ppx','pukima','telaso','bajingan','asu','monyet','goblok','tolol','bego','bgo','ngentod','ngentod','jancok','jancuk','goblog'];
 
 
@@ -221,7 +221,7 @@ let a = `┌─────────────────❖
    │     ${metadata.subject}
    │✑ Member Count
    │     ${total_user} People
-   │✑ Semoga Beta Di sini,
+   │✑ Semoga Betah Di sini,
    │     Ikuti Rules Grub!
    │✑ Catatan:
    │     Ketik menu untuk
@@ -239,7 +239,7 @@ let a = `┌─────────────────❖
 
      
 } else if (anu.action == 'remove') {
-// let b = `🕊️ Selamat Tinggal *@${num.split('@')[0]}*\nDia Keluar Dari Grup *${metadata.subject}*`
+  let b = `🕊️ Selamat Tinggal *@${num.split('@')[0]}*\nDia Keluar Dari Grup *${metadata.subject}*`
 // autoresbot.sendMessage(anu.id, {
 //      text: b, 
 //       contextInfo: {
@@ -253,6 +253,9 @@ let a = `┌─────────────────❖
 //     }}})
 // await sleep(100)
 // autoresbot.sendMessage(anu.id, { audio: fs.readFileSync('./mp3/sayonara.mp3'), mimetype: 'audio/mp4', ptt: true, fileLength: 88738})
+
+    autoresbot.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: b})
+	
 } else if (anu.action == 'promote') {
 
 
