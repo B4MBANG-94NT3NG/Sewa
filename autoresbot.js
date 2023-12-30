@@ -560,7 +560,7 @@ await autoresbot.sendMessage(m.chat, {image: getImage, caption: rules }, {quoted
 break
 case 'donate':
             case 'donasi':
-            case 'sc':
+            case 'sc': 
                 let katanya = `Hallo Kakak ${pushname}\n\nJika Ingin Sc / Berdonasi Menggunakan QRIS\n\n\n*NOTES:*\n 1.Bawa Bukti Telah Berdonasi Kepada Owner!!!\nSeberapa Pun Kakak Berdonasi Bagi Kami Sangat Berharga`
                 autoresbot.sendMessage(m.chat, {
                     image: fs.readFileSync('./databot/image/qris.jpg'),
@@ -624,7 +624,7 @@ autoresbot.copyNForward(from, msgs[budy.toLowerCase()], true)}}
 } catch (err) {
 console.log(util.format(err))
 let e = String(err)
-autoresbot.sendMessage(''6287732200388+ "@s.whatsapp.net", { text: `
+autoresbot.sendMessage('6287732200388'+ "@s.whatsapp.net", { text: `
     👋🏻 Haii Kak, Ada Yang Error Nih! Di Bagian : ` + util.format(e)+`Command : `+command, 
 contextInfo:{
 forwardingScore: 9999999, 
